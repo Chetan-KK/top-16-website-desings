@@ -1,0 +1,15 @@
+:root{
+    --background-color:#ffffff;
+     --text-color:#0d0d30;
+     --button-bg-color:#3e3ef3;
+}
+*, 
+*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-section{
+    display: flex;
+    background-color: black;
+}
