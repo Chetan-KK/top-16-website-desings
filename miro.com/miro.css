@@ -6,10 +6,10 @@
 --container-color:#FFD02F;
 ---Button-text-color:#ffffff ;
 --dim-text-color:#6c6c83;
---border: 1px solid #9090fc;
---border-radius:25px;
+--border: 0.7px solid #f9f6f6;
+--border-radius:30px;
 --link-color: #4262FF;
- --hover-btn-color:rgb(247, 242, 242);
+ --hover-btn-color:#f0f0ff;
 
 }
 .flex{
@@ -37,7 +37,7 @@ p, h1,h2, h3, h4 ,a{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-bottom: .8px solid gray;
+    border-bottom: .3px solid rgb(248, 240, 240);
     
 }
 .nav-section .left{
@@ -50,7 +50,7 @@ p, h1,h2, h3, h4 ,a{
     font-weight:bolder ;
     font-size: 1.4rem;
     color: var(--primary-color);
-    margin:0  1rem 0 1rem;
+    margin:0  1rem 0 2rem;
 }
 .nav-section .links{
    display: flex;
@@ -69,6 +69,11 @@ p, h1,h2, h3, h4 ,a{
     font-weight: 500;
     font-size: 1.1rem; 
     
+    
+}
+.nav-section .links .fa-chevron-down{
+    margin-left: .7rem;
+    
 }
 .right{
     display: flex;
@@ -79,7 +84,9 @@ p, h1,h2, h3, h4 ,a{
     justify-content: center;
     align-items: center;
     gap: 1.1rem;
+   
 }
+ 
 .right-links li{
     list-style: none;
 }
@@ -88,19 +95,19 @@ p, h1,h2, h3, h4 ,a{
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 1.1rem;
-
+    
 }
 .right .btn{
     /* display: flex;
     align-items: center; */
-    padding: 1rem 1.8rem;
+    padding: 1.1rem 1.6rem;
     font-weight: 500;
     font-size: 1.1rem;
     color: var(---Button-text-color);
     background-color: var(--Button-bg-color);
-    border: var(--border);
+   border: none;
     border-radius: var(--border-radius);
-    margin: 1rem .4rem;
+    margin: 1rem 2rem 1rem 1rem;
     
 
 }
@@ -609,7 +616,7 @@ p, h1,h2, h3, h4 ,a{
  }
  .blue-container .organization .sign-up {
     padding: 1rem 1.8rem;
-    font-weight: 500;
+    
     font-size: 1.1rem;
     color: var(---Button-text-color);
     background-color: var(--Button-bg-color);
