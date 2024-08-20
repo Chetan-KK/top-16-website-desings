@@ -28,10 +28,14 @@
 }
 body{
     background-color: white;
+   
 }
 p, h1,h2, h3, h4 ,a{
  font-family: "Inter", sans-serif ;
 }
+
+
+
 .nav-section{
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,7 @@ p, h1,h2, h3, h4 ,a{
 }
 .left .logo{
     font-weight:bolder ;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
     margin:0  1rem 0 2rem;
 }
@@ -85,6 +89,7 @@ p, h1,h2, h3, h4 ,a{
     align-items: center;
     gap: 1.1rem;
    
+   
 }
  
 .right-links li{
@@ -96,7 +101,13 @@ p, h1,h2, h3, h4 ,a{
     font-weight: 500;
     font-size: 1.1rem;
     
+    
 }
+.right-links .img-global img{
+    margin-left: 1rem;
+}
+
+
 .right .btn{
     /* display: flex;
     align-items: center; */
@@ -111,6 +122,12 @@ p, h1,h2, h3, h4 ,a{
     
 
 }
+.fa-arrow-right-long{
+    margin-left: .5rem;
+}
+
+ 
+
 .main--container{
     display: flex;
     justify-content: space-between;
@@ -148,9 +165,9 @@ p, h1,h2, h3, h4 ,a{
  }
  .button-section input{
     padding: .6rem 7rem;
-    border: var(--border);
+    border: .7px solid rgb(166, 166, 251);
     border-radius: var(--border-radius);
-    font-size: .9rem;
+    font-size: 1rem;
     color: var(--dim-text-color);
     margin-bottom: .9rem;
     margin-right:3.2rem ;
@@ -494,6 +511,7 @@ p, h1,h2, h3, h4 ,a{
  .review-section .review-heading h1{
         font-size: 2.8rem;
         color: var(--primary-color);
+        
  } 
  .yellow-container .trust-heading p{
     text-decoration: underline;
@@ -503,24 +521,37 @@ p, h1,h2, h3, h4 ,a{
  }
  .yellow-container .section-one,
  .section-two{
-    display: flex;
+     display: flex;
     justify-content: center;
     gap: 4rem;
     margin-top: 5rem;
+    align-items: center; 
+    
+ }
+ .yellow-container .section-one .trust-section,
+ .yellow-container .section-two .trust-section{
+    
+    width: 350px;
+
  }
  .yellow-container .section-one .trust-section h1,
  .yellow-container .section-two .trust-section h1{
     font-size: 3rem;
-    text-align: center;
+     text-align: center;
     padding-bottom: 2rem;
     color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
    
  }
  .yellow-container .section-one .trust-section p,
  .yellow-container .section-two .trust-section p{
-    font-size: 1.2rem;
+     font-size: 1rem;
     color: var(--secondary-color);
-    text-align: center;
+    text-align: center; 
+    font-weight: 500;
  }
 .review-section .review-heading{
     display: flex;
@@ -537,6 +568,10 @@ p, h1,h2, h3, h4 ,a{
     font-size: 1rem;
     color: var(--link-color);
     background-color: white;
+    transition: 24ms;
+}
+.review-section .review-heading .customer:hover{
+    background-color: var(--Background-color);
 }
  .review-container {
     display: flex;
@@ -563,31 +598,31 @@ p, h1,h2, h3, h4 ,a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
-    gap: 4rem;
+    gap: 1rem;
+   
 }
-.members .identity{
+.members .members--container{
     display: flex;
     align-items: center;
+    gap: 1rem;
+    margin: 2.5rem;
 }
-.members .identity p{
-    padding-left: 1rem;
+.members .members--container .identity{
     color: var(--dim-text-color);
+    font-size: 1rem;
 }
-.members .identity img{
-    border: 1px solid rgb(253, 252, 252);
-    border-radius: 100%;
+.members .members--container .identity p{
+    padding-top: .4rem;
 }
 
 .blue-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-     margin: 12rem 0 7rem 12rem; 
+    text-align: center;
     background-color: var(--primary-color);
-    width: 1000px;
-   border-radius: 10px;
+    margin: 10rem 10rem;
+    border-radius: 20px;
+    
 }
 .blue-container .join-heading h1{
     margin-top: 7rem;
@@ -599,9 +634,9 @@ p, h1,h2, h3, h4 ,a{
     color: var(--Background-color);
     text-align: center;
     padding: .4rem 0 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
- .blue-container .organization{
+.blue-container .organization{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -612,97 +647,109 @@ p, h1,h2, h3, h4 ,a{
     color: var(--Background-color);
     text-decoration: underline;
     text-underline-offset: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
  }
  .blue-container .organization .sign-up {
     padding: 1rem 1.8rem;
-    
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(---Button-text-color);
     background-color: var(--Button-bg-color);
     border-radius: var(--border-radius);
     margin-bottom:7rem ;
+
 }
+
 .footer{
     background-color: var(--primary-color);
     color: var(--Background-color);
     width: 100%;
+    
 }
 .footer .link-section-footer{
     display: flex;
-    align-items: center;
+   padding-top: 4rem;
      justify-content: space-around; 
-    height: 500px; 
+    height: 600px; 
     text-align: justify;
-    border-bottom: var(--border);
+    border-bottom: .2px solid #fffcfcbb;
+   
+   
 }
 .footer .link-section-footer .product h1{
    
      padding-bottom: 1rem; 
-    font-size: 1.2rem;
+    font-size: 1rem;
 
 }
 .footer .link-section-footer .product p{
     font-weight: 300;
-     padding-top: .6rem; 
+     padding-top: .8rem; 
 }
 .footer .link-section-footer .product a{
     color: var(--Background-color);
     text-underline-offset: 4px;
+     
     
 }
-.footer .bootom-bar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
+.footer .link-section-footer .product {
+    height: 300px;
 }
-.footer .bootom-bar .left-bootom-sec{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.footer .bootom-bar .left-bootom-sec .bottom-bar-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    font-size: 1.2rem;
-    margin-left:2rem ;
 
-}
-.footer .bootom-bar .left-bootom-sec .bottom-bar-links{
+ .footer .bootom-bar{
     display: flex;
-    align-items: center;
-    margin-right: 20rem;
-    gap: 1rem;
-
-}
-.left-bootom-sec .bottom-bar-links li{
-    list-style: none;
-    
+    align-items:center;
    
+
 }
-.left-bootom-sec .bottom-bar-links a{
+.footer .bootom-bar .bottom-bar-icons{
+    display: flex;
+    gap: 1rem;
+     margin-left: 3rem; 
+    font-size: 1rem;
+}
+.footer .bootom-bar .bottom-bar-icons i{
+    transition: 24ms;
+}
+.footer .bootom-bar .bottom-bar-icons i:hover{
+    transform: scale(1.1,1.1);
+
+}
+.footer .bootom-bar .bottom-bar-links{
+    display: flex;
+    gap: 1rem;
+     margin-left: 1rem; 
+    align-items: center;
+    font-size: 1rem;
+    white-space: nowrap;
+    
+
+}
+.bottom-bar-links li{
+list-style: none;
+}
+.bottom-bar-links a{
     text-decoration: none;
     color: var(--Background-color);
     
-
-}
-
-.right-bottom-sec{
+} 
+.bootom-bar .right-bottom-sec{
     display: flex;
+    gap: 1rem;
     align-items: center;
-    justify-content: center;
-   
-}
-.right-bottom-sec .app{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--border);
-    padding: .3rem 2rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     
 
 }
+.bootom-bar .right-bottom-sec .app{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border: var(--border);
+    padding: .5rem 1rem;
+    
+} 
+
+
